@@ -1,5 +1,6 @@
 const express =require("express");
 
+require("./config/connect");
 
 const app =express();
 
