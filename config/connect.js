@@ -1,20 +1,16 @@
-// communication avec l mongodb
-// importation mongodb
-const mongoose = require("mongoose")
+const mongoose = require('mongoose')
 
-
-
-// connextion de la database
-mongoose.connect("mongodb://127.0.0.1:27017/ecommerce")
+mongoose.connect('mongodb://127.0.0.1:27017/ecommerce')
   .then(
     ()=>{
-        console.log("connected");
+      console.log('connected');
     }
   )
   .catch(
     (err)=>{
-        console.log(err);
+      console.log(err);
     }
   )
-    
-module.exports = mongoose;
+
+
+module.exports = mongoose;  
